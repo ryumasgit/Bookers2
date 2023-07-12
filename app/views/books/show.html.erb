@@ -1,2 +1,29 @@
-<p><strong>Title</strong> <%= @book.title %></p>
-<p><strong>Opinion</strong> <%= @book.body %></p>
+<p></p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <%= render 'new', book: @book %>
+    </div>
+    <div class="col-md-8">
+      <h2>Book detail</h2>
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><%= image_tag @books.get_image%><br>
+            <%= link_to @books.user.name, user_path(@books.user_id) %></tb>
+            <td><%= @books.title %></td>
+            <td><%= @books.body %></td>
+            <td><%= link_to 'Edit', edit_book_path(@books.id) %></td>
+            <td><%= link_to 'Destroy', book_path(@books.id), method: :delete, "data-confirm" => "本当に消しますか？" %></td>
+          </tr>
+        </tbody>
+      </table>

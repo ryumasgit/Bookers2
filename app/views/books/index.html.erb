@@ -1,2 +1,14 @@
-<h1>Books#index</h1>
-<p>Find me in app/views/books/index.html.erb</p>
+<p></p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <%= render 'new', book: @book %>
+    </div>
+    <div class="col-md-8">
+      <% @books.each do |books| %>
+        <p><strong>Title</strong> <%= books.title %></p>
+        <p><strong>Opinion</strong> <%= books.body %></p>
+      <% end %>
+    </div>
+  </div>
+</div>
