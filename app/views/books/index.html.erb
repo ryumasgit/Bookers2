@@ -4,11 +4,30 @@
     <div class="col-md-3">
       <%= render 'new', book: @book %>
     </div>
-    <div class="col-md-8">
+    <div class="col-md-8 offset-md-1">
+      <h2>Books</h2>
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th>Title</th>
+            <th>Opinion</th>
+          </tr>
+        </thead>
       <% @books.each do |books| %>
-        <p><strong>Title</strong> <%= books.title %></p>
-        <p><strong>Opinion</strong> <%= books.body %></p>
+      <tbody>
+        <tr>
+          <td><%= link_to user_path(books.user_id) do %>
+          <%= image_tag books.user.get_profile_image(100,100) %></td>
+          <% end %>
+          <td><%= link_to book_path(books.id) do %>
+          <%= books.title %></td>
+          <% end %>
+          <td><%= books.body %></td>
+        </tr>
+      </tbody>
       <% end %>
+      </table>
     </div>
   </div>
 </div>
