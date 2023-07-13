@@ -1,12 +1,12 @@
 <p></p>
-<div class="container">
+<div class="container px-5 px-sm-0">
   <div class="row">
     <div class="col-md-3">
-      <%= render 'new', book: @book %>
+      <%= render 'new', book: @book, user: @user %>
     </div>
     <div class="col-md-8 offset-md-1">
       <h2>Books</h2>
-      <table>
+      <table class="table table-hover table-inverse">
         <thead>
           <tr>
             <th></th>
@@ -14,19 +14,19 @@
             <th>Opinion</th>
           </tr>
         </thead>
-      <% @books.each do |books| %>
-      <tbody>
-        <tr>
-          <td><%= link_to user_path(books.user_id) do %>
-          <%= image_tag books.user.get_profile_image(100,100) %></td>
+        <tbody>
+          <% @books.each do |books| %>
+          <tr>
+            <td><%= link_to user_path(books.user_id) do %>
+            <%= image_tag books.user.get_profile_image(100,100) %></td>
+            <% end %>
+            <td><%= link_to book_path(books.id) do %>
+            <%= books.title %></td>
+            <% end %>
+            <td><%= books.body %></td>
+          </tr>
           <% end %>
-          <td><%= link_to book_path(books.id) do %>
-          <%= books.title %></td>
-          <% end %>
-          <td><%= books.body %></td>
-        </tr>
-      </tbody>
-      <% end %>
+        </tbody>
       </table>
     </div>
   </div>
