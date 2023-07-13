@@ -1,5 +1,13 @@
 <p></p>
 <div class="container px-5 px-sm-0">
+  <% if @book.errors.any? %>
+  <h3><%= @book.errors.count %> errors prohibited this obj from being saved:</h3>
+  <ul>
+    <% @book.errors.full_messages.each do |message| %>
+    <li><%= message %></li>
+    <% end %>
+  </ul>
+  <% end %>
   <div class="row">
     <div class="col-md-3">
       <%= render 'new', book: @book, user: @user %>
@@ -12,6 +20,7 @@
             <th></th>
             <th>Title</th>
             <th>Opinion</th>
+            <th colspan="3"></th>
           </tr>
         </thead>
         <tbody>
