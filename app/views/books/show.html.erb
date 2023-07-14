@@ -1,3 +1,6 @@
+<div>
+  <%= flash[:notice] %>
+</div>
 <p></p>
 <div class="container">
   <div class="row">
@@ -9,18 +12,26 @@
       <table class="table">
         <tbody>
           <tr>
-            <td><%= image_tag @books.user.get_profile_image(100,100) %><br>
-            <%= link_to @books.user.name, user_path(@books.user_id) %></tb>
+            <td>
+              <%= link_to user_path(@books.user_id) do %>
+                <%= image_tag @books.user.get_profile_image(100,100) %><br>
+                <%= @books.user.name %>
+              <% end %>
+            </tb>
             <td><%= link_to book_path(@books.id) do %>
             <%= @books.title %></td>
             <% end %>
             <td><%= @books.body %></td>
             <td>
-              <%= link_to 'Edit', edit_book_path(@books.id), class: "btn btn-sm btn-success text-white" %>
+              <% if @books.user == current_user %>
+                <%= link_to 'Edit', edit_book_path(@books.id), class: "btn btn-sm btn-success text-white" %>
+              <% end %>
             </td>
             <td>
-              <%= link_to 'Destroy', book_path(@books.id), method: :delete, "data-confirm" => "本当に消しますか？",
-              class: "btn btn-sm btn-danger text-white" %>
+              <% if @books.user == current_user %>
+                <%= link_to 'Destroy', book_path(@books.id), method: :delete, "data-confirm" => "本当に消しますか？",
+                class: "btn btn-sm btn-danger text-white" %>
+              <% end %>
             </td>
           </tr>
         </tbody>

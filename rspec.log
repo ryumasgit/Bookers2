@@ -181,7 +181,7 @@ Userモデルのテスト
 [32m      bodyフォームが表示される[0m
 [32m      bodyフォームに値が入っていない[0m
 [32m      Create Bookボタンが表示される[0m
-  自分���ユーザ情報編集画面のテスト
+  自分のユーザ情報編集画面のテスト
     表示の確認
 [32m      URLが正しい[0m
 [32m      名前編集フォームに自分の名前が表示される[0m
@@ -195,12 +195,12 @@ Userモデルのテスト
 
 [STEP3] 仕上げのテスト
   サクセスメッセージのテスト
-[31m    ユーザ新規登録成功時 (FAILED - 10)[0m
-[31m    ユーザログイン成功時 (FAILED - 11)[0m
-[31m    ユーザログアウト成功時 (FAILED - 12)[0m
-[31m    ユーザのプロフィール情報更新成功時 (FAILED - 13)[0m
-[31m    投稿データの新規投稿成功時: 投稿一覧画面から行います。 (FAILED - 14)[0m
-[31m    投稿データの更新成功時 (FAILED - 15)[0m
+[32m    ユーザ新規登録成功時[0m
+[32m    ユーザログイン成功時[0m
+[32m    ユーザログアウト成功時[0m
+[31m    ユーザのプロフィール情報更新成功時 (FAILED - 10)[0m
+[31m    投稿データの新規投稿成功時: 投稿一覧画面から行います。 (FAILED - 11)[0m
+[31m    投稿データの更新成功時 (FAILED - 12)[0m
   処理失敗時のテスト
     ユーザ新規登録失敗: nameを1文字にする
 [32m      新規登録されない[0m
@@ -208,17 +208,17 @@ Userモデルのテスト
 [32m      バリデーションエラーが表示される[0m
     ユーザのプロフィール情報編集失敗: nameを1文字にする
 [32m      更新されない[0m
-[31m      ユーザ編集画面を表示しており、フォームの内容が正しい (FAILED - 16)[0m
-[31m      バリデーションエラーが表示される (FAILED - 17)[0m
+[31m      ユーザ編集画面を表示しており、フォームの内容が正しい (FAILED - 13)[0m
+[31m      バリデーションエラーが表示される (FAILED - 14)[0m
     投稿データの新規投稿失敗: 投稿一覧画面から行い、titleを空にする
 [32m      投稿が保存されない[0m
 [32m      投稿一覧画面を表示している[0m
 [32m      新規投稿フォームの内容が正しい[0m
-[31m      バリデーションエラーが表示される (FAILED - 18)[0m
+[31m      バリデーションエラーが表示される (FAILED - 15)[0m
     投稿データの更新失敗: titleを空にする
 [32m      投稿が更新されない[0m
-[31m      投稿編集画面を表示しており、フォームの内容が正しい (FAILED - 19)[0m
-[31m      エラーメッセージが表示される (FAILED - 20)[0m
+[31m      投稿編集画面を表示しており、フォームの内容が正しい (FAILED - 16)[0m
+[31m      エラーメッセージが表示される (FAILED - 17)[0m
   ログインしていない場合のアクセス制限のテスト: アクセスできず、ログイン画面に遷移する
 [32m    ユーザ一覧画面[0m
 [32m    ユーザ詳細画面[0m
@@ -234,15 +234,15 @@ Userモデルのテスト
 [32m        ユーザ画像・名前のリンク先が正しい[0m
 [32m        投稿のtitleが表示される[0m
 [32m        投稿のopinionが表示される[0m
-[31m        投稿の編集リンクが表示されない (FAILED - 21)[0m
-[31m        投稿の削除リンクが表示されない (FAILED - 22)[0m
+[32m        投稿の編集リンクが表示されない[0m
+[32m        投稿の削除リンクが表示されない[0m
       サイドバーの確認
-[31m        他人の名前と紹介文が表示される (FAILED - 23)[0m
-[31m        他人のユーザ編集画面へのリンクが存在する (FAILED - 24)[0m
-[31m        自分の名前と紹介文は表示されない (FAILED - 25)[0m
-[31m        自分のユーザ編集画面へのリンクは存在しない (FAILED - 26)[0m
+[31m        他人の名前と紹介文が表示される (FAILED - 18)[0m
+[31m        他人のユーザ編集画面へのリンクが存在する (FAILED - 19)[0m
+[31m        自分の名前と紹介文は表示されない (FAILED - 20)[0m
+[31m        自分のユーザ編集画面へのリンクは存在しない (FAILED - 21)[0m
     他人の投稿編集画面
-[31m      遷移できず、投稿一覧画面にリダイレクトされる (FAILED - 27)[0m
+[32m      遷移できず、投稿一覧画面にリダイレクトされる[0m
     他人のユーザ詳細画面のテスト
       表示の確認
 [32m        URLが正しい[0m
@@ -256,7 +256,7 @@ Userモデルのテスト
 [32m        自分の名前と紹介文は表示されない[0m
 [32m        自分のユーザ編集画面へのリンクは存在しない[0m
     他人のユーザ情報編集画面
-[31m      遷移できず、自分のユーザ詳細画面にリダイレクトされる (FAILED - 28)[0m
+[32m      遷移できず、自分のユーザ詳細画面にリダイレクトされる[0m
   グリッドシステムのテスト: container, row, col-md-〇を正しく使えている
 [32m    ユーザ一覧画面[0m
 [32m    ユーザ詳細画面[0m
@@ -307,8 +307,8 @@ Failures:
   4) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 編集成功のテスト titleが正しく更新される
      [31mFailure/Error: expect(book.reload.title).not_to eq @book_old_title[0m
      [31m[0m
-     [31m  expected: value != "qa3wj"[0m
-     [31m       got: "qa3wj"[0m
+     [31m  expected: value != "hiiyo"[0m
+     [31m       got: "hiiyo"[0m
      [31m[0m
      [31m  (compared using ==)[0m
      [36m# ./spec/system/02_after_login_spec.rb:246:in `block (4 levels) in <main>'[0m
@@ -316,8 +316,8 @@ Failures:
   5) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 編集成功のテスト bodyが正しく更新される
      [31mFailure/Error: expect(book.reload.body).not_to eq @book_old_body[0m
      [31m[0m
-     [31m  expected: value != "nea0nrje8mdnfjvm2i9u"[0m
-     [31m       got: "nea0nrje8mdnfjvm2i9u"[0m
+     [31m  expected: value != "miwy6omcp4rvtmt3xzd7"[0m
+     [31m       got: "miwy6omcp4rvtmt3xzd7"[0m
      [31m[0m
      [31m  (compared using ==)[0m
      [36m# ./spec/system/02_after_login_spec.rb:249:in `block (4 levels) in <main>'[0m
@@ -334,8 +334,8 @@ Failures:
   7) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 更新成功のテスト nameが正しく更新される
      [31mFailure/Error: expect(user.reload.name).not_to eq @user_old_name[0m
      [31m[0m
-     [31m  expected: value != "3ai4vm4bht"[0m
-     [31m       got: "3ai4vm4bht"[0m
+     [31m  expected: value != "ud03ahzp7p"[0m
+     [31m       got: "ud03ahzp7p"[0m
      [31m[0m
      [31m  (compared using ==)[0m
      [36m# ./spec/system/02_after_login_spec.rb:398:in `block (4 levels) in <main>'[0m
@@ -343,13 +343,13 @@ Failures:
   8) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 更新成功のテスト introductionが正しく更新される
      [31mFailure/Error: expect(user.reload.introduction).not_to eq @user_old_intrpduction[0m
      [31m[0m
-     [31m  expected: value != "km5uvxj0vfy723xw7xfz"[0m
-     [31m       got: "km5uvxj0vfy723xw7xfz"[0m
+     [31m  expected: value != "tchor22zf3dij474yr5t"[0m
+     [31m       got: "tchor22zf3dij474yr5t"[0m
      [31m[0m
      [31m  (compared using ==)[0m
      [36m# ./spec/system/02_after_login_spec.rb:401:in `block (4 levels) in <main>'[0m
 
-  9) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 更新成功のテスト リダイレクト先が、自分のユーザ詳細画面に���っている
+  9) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 更新成功のテスト リダイレクト先が、自分のユーザ詳細画面になっている
      [31mFailure/Error: expect(current_path).to eq '/users/' + user.id.to_s[0m
      [31m[0m
      [31m  expected: "/users/1"[0m
@@ -358,52 +358,37 @@ Failures:
      [31m  (compared using ==)[0m
      [36m# ./spec/system/02_after_login_spec.rb:404:in `block (4 levels) in <main>'[0m
 
-  10) [STEP3] 仕上げのテスト サクセスメッセージのテスト ユーザ新規登録成功時
+  10) [STEP3] 仕上げのテスト サクセスメッセージのテスト ユーザのプロフィール情報更新成功時
       [31mFailure/Error: is_expected.to have_content 'successfully'[0m
-      [31m  expected to find text "successfully" in "Bookers\nHome Users Books Log out\nUser info\nname zisnunzna introduction\nNew book\nTitle\nOpinion\nBooks\nTitle Opinion\nCopyRight Infratop.inc"[0m
-      [36m# ./spec/system/03_finishing_touches_spec.rb:19:in `block (3 levels) in <main>'[0m
-
-  11) [STEP3] 仕上げのテスト サクセスメッセージのテスト ユーザログイン成功時
-      [31mFailure/Error: is_expected.to have_content 'successfully'[0m
-      [31m  expected to find text "successfully" in "Bookers\nHome Users Books Log out\nUser info\nname 7f2wdubtvy introduction mnu7zs9mzlug5uy0tb4t\nNew book\nTitle\nOpinion\nBooks\nTitle Opinion s6b66 d9qmfeulf03jv3734axu\nCopyRight Infratop.inc"[0m
-      [36m# ./spec/system/03_finishing_touches_spec.rb:26:in `block (3 levels) in <main>'[0m
-
-  12) [STEP3] 仕上げのテスト サクセスメッセージのテスト ユーザログアウト成功時
-      [31mFailure/Error: is_expected.to have_content 'successfully'[0m
-      [31m  expected to find text "successfully" in "Bookers\nHome About Sign up Log in\nwelcome to Bookers !!\nIn Bookers,\nyou can share and exchange your opinions , inpressions , and emotions\nabout various books!\nLog in\nSign up\nCopyRight Infratop.inc"[0m
-      [36m# ./spec/system/03_finishing_touches_spec.rb:36:in `block (3 levels) in <main>'[0m
-
-  13) [STEP3] 仕上げのテスト サクセスメッセージのテスト ユーザのプロフィール情報更新成功時
-      [31mFailure/Error: is_expected.to have_content 'successfully'[0m
-      [31m  expected to find text "successfully" in "Bookers\nHome Users Books Log out\nUser info\nName\nImage\nIntroduction fdjeasgwq4isbetv2ch4\nCopyRight Infratop.inc"[0m
+      [31m  expected to find text "successfully" in "Bookers\nHome Users Books Log out\nUser info\nName\nImage\nIntroduction 8au87vfgpivpcxhfgktt\nCopyRight Infratop.inc"[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:45:in `block (3 levels) in <main>'[0m
 
-  14) [STEP3] 仕上げのテスト サクセスメッセージのテスト 投稿データの新規投稿成功時: 投稿一覧画面から行います。
+  11) [STEP3] 仕上げのテスト サクセスメッセージのテスト 投稿データの新規投稿成功時: 投稿一覧画面から行います。
       [31mFailure/Error: is_expected.to have_content 'successfully'[0m
-      [31m  expected to find text "successfully" in "Bookers\nHome Users Books Log out\nUser info\nname y29i6dra09 introduction 21qp8e2pebj4xlxwk20g\nNew book\nTitle\nOpinion\nBooks\nTitle Opinion bg6zs ici4dq2cxxr1p0llerp7 xhthu c39osoyi4dscp5c7c996\nCopyRight Infratop.inc"[0m
+      [31m  expected to find text "successfully" in "Bookers\nHome Users Books Log out\nUser info\nname mqsz877fo2 introduction 9zmwmlnownoxz55vsqye\nNew book\nTitle\nOpinion\nBooks\nTitle Opinion qkj03 0nh8xcs4vbtkggcwzreu 4zjn9 dtywc58ytprl9msk7eep\nCopyRight Infratop.inc"[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:56:in `block (3 levels) in <main>'[0m
 
-  15) [STEP3] 仕上げのテスト サクセスメッセージのテスト 投稿データの更新成功時
+  12) [STEP3] 仕上げのテスト サクセスメッセージのテスト 投稿データの更新成功時
       [31mFailure/Error: is_expected.to have_content 'successfully'[0m
-      [31m  expected to find text "successfully" in "Bookers\nHome Users Books Log out\nEditing Book\nTitle\nOpinion pwexs8l90nu6qosz9bo7\nShow | Back\nCopyRight Infratop.inc"[0m
+      [31m  expected to find text "successfully" in "Bookers\nHome Users Books Log out\nEditing Book\nTitle\nOpinion yssi80wgbvpvsbgiovih\nShow | Back\nCopyRight Infratop.inc"[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:65:in `block (3 levels) in <main>'[0m
 
-  16) [STEP3] 仕上げのテスト 処理失敗時のテスト ユーザのプロフィール情報編集失敗: nameを1文字にする ユーザ編集画面を表示しており、フォームの内容が正しい
+  13) [STEP3] 仕上げのテスト 処理失敗時のテスト ユーザのプロフィール情報編集失敗: nameを1文字にする ユーザ編集画面を表示しており、フォームの内容が正しい
       [31mFailure/Error: expect(page).to have_field 'user[name]', with: @name[0m
-      [31m  expected to find visible field "user[name]" that is not disabled with value "0" but there were no matches. Also found "", which matched the selector but not all filters. Expected value to be "0" but was "bmzjtnwwov"[0m
+      [31m  expected to find visible field "user[name]" that is not disabled with value "u" but there were no matches. Also found "", which matched the selector but not all filters. Expected value to be "u" but was "4onyamv7ai"[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:113:in `block (4 levels) in <main>'[0m
 
-  17) [STEP3] 仕上げのテスト 処理失敗時のテスト ユーザのプロフィール情報編集失敗: nameを1文字にする バリデーションエラーが表示される
+  14) [STEP3] 仕上げのテスト 処理失敗時のテスト ユーザのプロフィール情報編集失敗: nameを1文字にする バリデーションエラーが表示される
       [31mFailure/Error: expect(page).to have_content "is too short (minimum is 2 characters)"[0m
-      [31m  expected to find text "is too short (minimum is 2 characters)" in "Bookers\nHome Users Books Log out\nUser info\nName\nImage\nIntroduction yb0weaivg9urw081vlkd\nCopyRight Infratop.inc"[0m
+      [31m  expected to find text "is too short (minimum is 2 characters)" in "Bookers\nHome Users Books Log out\nUser info\nName\nImage\nIntroduction 5hinxek92t9q6i1gvrfa\nCopyRight Infratop.inc"[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:116:in `block (4 levels) in <main>'[0m
 
-  18) [STEP3] 仕上げのテスト 処理失敗時のテスト 投稿データの新規投稿失敗: 投稿一覧画面から行い、titleを空にする バリデーションエラーが表示される
+  15) [STEP3] 仕上げのテスト 処理失敗時のテスト 投稿データの新規投稿失敗: 投稿一覧画面から行い、titleを空にする バリデーションエラーが表示される
       [31mFailure/Error: expect(page).to have_content "can't be blank"[0m
-      [31m  expected to find text "can't be blank" in "Bookers\nHome Users Books Log out\nUser info\nname pmiycp3w48 introduction hawluph2k45iv8f6wspq\nNew book\nTitle\nOpinion\nBooks\nTitle Opinion 3kpuy rhiq9n748uebehbxqntw 9z3eq lw107dorwaziv3svb0sq\nCopyRight Infratop.inc"[0m
+      [31m  expected to find text "can't be blank" in "Bookers\nHome Users Books Log out\nUser info\nname kywnnqfvdj introduction dgcu64xrj60qtogs41rk\nNew book\nTitle\nOpinion\nBooks\nTitle Opinion jyxy1 ms2tgkg5ymbdhshqs5og 1zrcn 2ryd5b1v8vahi1m7k5hv\nCopyRight Infratop.inc"[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:146:in `block (4 levels) in <main>'[0m
 
-  19) [STEP3] 仕上げのテスト 処理失敗時のテスト 投稿データの更新失敗: titleを空にする 投稿編集画面を表示しており、フォームの内容が正しい
+  16) [STEP3] 仕上げのテスト 処理失敗時のテスト 投稿データの更新失敗: titleを空にする 投稿編集画面を表示しており、フォームの内容が正しい
       [31mFailure/Error: expect(current_path).to eq '/books/' + book.id.to_s[0m
       [31m[0m
       [31m  expected: "/books/1"[0m
@@ -412,61 +397,33 @@ Failures:
       [31m  (compared using ==)[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:166:in `block (4 levels) in <main>'[0m
 
-  20) [STEP3] 仕上げのテスト 処理失敗時のテスト 投稿データの更新失敗: titleを空にする エラーメッセージが表示される
+  17) [STEP3] 仕上げのテスト 処理失敗時のテスト 投稿データの更新失敗: titleを空にする エラーメッセージが表示される
       [31mFailure/Error: expect(page).to have_content 'error'[0m
-      [31m  expected to find text "error" in "Bookers\nHome Users Books Log out\nEditing Book\nTitle\nOpinion svx3ukl9hp58lhnt8prp\nShow | Back\nCopyRight Infratop.inc"[0m
+      [31m  expected to find text "error" in "Bookers\nHome Users Books Log out\nEditing Book\nTitle\nOpinion tnymw3nqjgpj73qdgudh\nShow | Back\nCopyRight Infratop.inc"[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:171:in `block (4 levels) in <main>'[0m
 
-  21) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト 表示内容の確認 投稿の編集リンクが表示されない
-      [31mFailure/Error: expect(page).not_to have_link 'Edit'[0m
-      [31m  expected not to find visible link "Edit", found 1 match: "Edit"[0m
-      [36m# ./spec/system/03_finishing_touches_spec.rb:235:in `block (5 levels) in <main>'[0m
-
-  22) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト 表示内容の確認 投稿の削除リンクが表示されない
-      [31mFailure/Error: expect(page).not_to have_link 'Destroy'[0m
-      [31m  expected not to find visible link "Destroy", found 1 match: "Destroy"[0m
-      [36m# ./spec/system/03_finishing_touches_spec.rb:238:in `block (5 levels) in <main>'[0m
-
-  23) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト サイドバーの確認 他人の名前と紹介文が表示される
+  18) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト サイドバーの確認 他人の名前と紹介文が表示される
       [31mFailure/Error: expect(page).to have_content other_user.introduction[0m
-      [31m  expected to find text "u1nosg5l0zla805zrzgq" in "Bookers\nHome Users Books Log out\nUser info\nname 6j3l9kzdci introduction wx17bgcl9km9sh5d1brf\nNew book\nTitle\nOpinion\nBook detail\ntlu4hpd44i 075qf ydy0osavayur1fth8ot7 Edit Destroy\nCopyRight Infratop.inc"[0m
+      [31m  expected to find text "cmwt0s6a89l5n3srp76s" in "Bookers\nHome Users Books Log out\nUser info\nname nvgbt3g96q introduction zzhmwi5vuz8c28sw98bw\nNew book\nTitle\nOpinion\nBook detail\nlizsixbcyt ngrj1 l9frxmqyp83ua8zu7pac\nCopyRight Infratop.inc"[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:245:in `block (5 levels) in <main>'[0m
 
-  24) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト サイドバーの確認 他人のユーザ編集画面へのリンクが存在する
+  19) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト サイドバーの確認 他人のユーザ編集画面へのリンクが存在する
       [31mFailure/Error: expect(page).to have_link '', href: edit_user_path(other_user)[0m
       [31m  expected to find link "" with href "/users/2/edit" but there were no matches[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:248:in `block (5 levels) in <main>'[0m
 
-  25) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト サイドバーの確認 自分の名前と紹介文は表示されない
+  20) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト サイドバーの確認 自分の名前と紹介文は表示されない
       [31mFailure/Error: expect(page).not_to have_content user.name[0m
-      [31m  expected not to find text "syfsfrj6az" in "Bookers\nHome Users Books Log out\nUser info\nname syfsfrj6az introduction jhk36rzsw59c944ic5jd\nNew book\nTitle\nOpinion\nBook detail\n8x4tel6fs8 1pibz ozazy7glcnil6t83qtn9 Edit Destroy\nCopyRight Infratop.inc"[0m
+      [31m  expected not to find text "tpqeeyi7gg" in "Bookers\nHome Users Books Log out\nUser info\nname tpqeeyi7gg introduction 29bu1b0bkzfaui0a5rox\nNew book\nTitle\nOpinion\nBook detail\ngi17rfoh3p rfi4g fp2jgvdkpl5inan42xf0\nCopyRight Infratop.inc"[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:251:in `block (5 levels) in <main>'[0m
 
-  26) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト サイドバーの確認 自分のユーザ編集画面へのリンクは存在しない
+  21) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト サイドバーの確認 自分のユーザ編集画面へのリンクは存在しない
       [31mFailure/Error: expect(page).not_to have_link '', href: edit_user_path(user)[0m
       [31m  expected not to find visible link "" with href "/users/1/edit", found 1 match: ""[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:255:in `block (5 levels) in <main>'[0m
 
-  27) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿編集画面 遷移できず、投稿一覧画面にリダイレクトされる
-      [31mFailure/Error: expect(current_path).to eq '/books'[0m
-      [31m[0m
-      [31m  expected: "/books"[0m
-      [31m       got: "/books/2/edit"[0m
-      [31m[0m
-      [31m  (compared using ==)[0m
-      [36m# ./spec/system/03_finishing_touches_spec.rb:263:in `block (4 levels) in <main>'[0m
-
-  28) [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ情報編集画面 遷移できず、自分のユーザ詳細画面にリダイレクトされる
-      [31mFailure/Error: expect(current_path).to eq '/users/' + user.id.to_s[0m
-      [31m[0m
-      [31m  expected: "/users/1"[0m
-      [31m       got: "/users/2/edit"[0m
-      [31m[0m
-      [31m  (compared using ==)[0m
-      [36m# ./spec/system/03_finishing_touches_spec.rb:312:in `block (4 levels) in <main>'[0m
-
-Finished in 31.37 seconds (files took 2.59 seconds to load)
-[31m199 examples, 28 failures[0m
+Finished in 59.47 seconds (files took 1.73 seconds to load)
+[31m199 examples, 21 failures[0m
 
 Failed examples:
 
@@ -479,9 +436,6 @@ Failed examples:
 [31mrspec ./spec/system/02_after_login_spec.rb:397[0m [36m# [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 更新成功のテスト nameが正しく更新される[0m
 [31mrspec ./spec/system/02_after_login_spec.rb:400[0m [36m# [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 更新成功のテスト introductionが正しく更新される[0m
 [31mrspec ./spec/system/02_after_login_spec.rb:403[0m [36m# [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 更新成功のテスト リダイレクト先が、自分のユーザ詳細画面になっている[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:12[0m [36m# [STEP3] 仕上げのテスト サクセスメッセージのテスト ユーザ新規登録成功時[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:21[0m [36m# [STEP3] 仕上げのテスト サクセスメッセージのテスト ユーザログイン成功時[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:28[0m [36m# [STEP3] 仕上げのテスト サクセスメッセージのテスト ユーザログアウト成功時[0m
 [31mrspec ./spec/system/03_finishing_touches_spec.rb:38[0m [36m# [STEP3] 仕上げのテスト サクセスメッセージのテスト ユーザのプロフィール情報更新成功時[0m
 [31mrspec ./spec/system/03_finishing_touches_spec.rb:47[0m [36m# [STEP3] 仕上げのテスト サクセスメッセージのテスト 投稿データの新規投稿成功時: 投稿一覧画面から行います。[0m
 [31mrspec ./spec/system/03_finishing_touches_spec.rb:58[0m [36m# [STEP3] 仕上げのテスト サクセスメッセージのテスト 投稿データの更新成功時[0m
@@ -490,12 +444,8 @@ Failed examples:
 [31mrspec ./spec/system/03_finishing_touches_spec.rb:144[0m [36m# [STEP3] 仕上げのテスト 処理失敗時のテスト 投稿データの新規投稿失敗: 投稿一覧画面から行い、titleを空にする バリデーションエラーが表示される[0m
 [31mrspec ./spec/system/03_finishing_touches_spec.rb:165[0m [36m# [STEP3] 仕上げのテスト 処理失敗時のテスト 投稿データの更新失敗: titleを空にする 投稿編集画面を表示しており、フォームの内容が正しい[0m
 [31mrspec ./spec/system/03_finishing_touches_spec.rb:170[0m [36m# [STEP3] 仕上げのテスト 処理失敗時のテスト 投稿データの更新失敗: titleを空にする エラーメッセージが表示される[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:234[0m [36m# [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト 表示内容の確認 投稿の編集リンクが表示されない[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:237[0m [36m# [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト 表示内容の確認 投稿の削除リンクが表示されない[0m
 [31mrspec ./spec/system/03_finishing_touches_spec.rb:243[0m [36m# [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト サイドバーの確認 他人の名前と紹介文が表示される[0m
 [31mrspec ./spec/system/03_finishing_touches_spec.rb:247[0m [36m# [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト サイドバーの確認 他人のユーザ編集画面へのリンクが存在する[0m
 [31mrspec ./spec/system/03_finishing_touches_spec.rb:250[0m [36m# [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト サイドバーの確認 自分の名前と紹介文は表示されない[0m
 [31mrspec ./spec/system/03_finishing_touches_spec.rb:254[0m [36m# [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト サイドバーの確認 自分のユーザ編集画面へのリンクは存在しない[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:261[0m [36m# [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿編集画面 遷移できず、投稿一覧画面にリダイレクトされる[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:310[0m [36m# [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ情報編集画面 遷移できず、自分のユーザ詳細画面にリダイレクトされる[0m
 
