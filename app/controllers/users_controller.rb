@@ -2,15 +2,16 @@ class UsersController < ApplicationController
   before_action :is_matching_login_user, only: [:edit, :update]
 
   def index
-    @book = Book.new
     @user = current_user
     @users = User.all
+    @book = Book.new
   end
 
   def show
+    @user = current_user
+    @users = User.find(params[:id])
     @book = Book.new
-    @user = User.find(params[:id])
-    @books = @user.books
+    @books = @users.books
   end
 
   def edit
@@ -21,9 +22,8 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     if @user.update(user_params)
       flash[:notice] = "You have updated user successfully."
-      redirect_to user_path(@user)
+      redirect_to user_path(@user.id)
     else
-      flash[:notice] = "An error prevented the user from being successfully updated."
       render :edit
     end
   end

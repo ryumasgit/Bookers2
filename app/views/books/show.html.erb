@@ -19,9 +19,12 @@
               <% end %>
             </tb>
             <td><%= link_to book_path(@books.id) do %>
-            <%= @books.title %></td>
+            <%= @books.title %>
             <% end %>
-            <td><%= @books.body %></td>
+            </td>
+            <td>
+              <%= @books.body %>
+            </td>
             <td>
               <% if @books.user == current_user %>
                 <%= link_to 'Edit', edit_book_path(@books.id), class: "btn btn-sm btn-success text-white" %>

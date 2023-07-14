@@ -4,8 +4,7 @@
 <p></p>
 <div class="container px-5 px-sm-0">
   <% if @book.errors.any? %>
-  <% error_message = @book.errors.count == 1 ? "#{@book.errors.count} error" : "#{@book.errors.count} errors" %>
-  <h3><%= error_message %> prohibited this obj from being saved:</h3>
+  <h3><%= @book.errors.count %> error prohibited this obj from being saved:</h3>
   <ul>
     <% @book.errors.full_messages.each do |message| %>
     <li><%= message %></li>
