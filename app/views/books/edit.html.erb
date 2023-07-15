@@ -12,7 +12,7 @@
         </ul>
       <% end %>
       <%= form_with model: @book do |f| %>
-      <form>
+      
         <div class="form-group">
           <%= f.label :title, "Title" %>
           <%= f.text_field :title, class: "form-control"%>
@@ -24,7 +24,7 @@
         <div class="form-group">
           <%= f.submit "Update Book", class: "btn btn-success"%>
         </div>
-      </form>
+     
       <div>
       <%= link_to 'Show', book_path(@book.id) %>
       |

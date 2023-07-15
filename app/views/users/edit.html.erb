@@ -12,7 +12,7 @@
         </ul>
       <% end %>
       <%= form_with model: @user do |f| %>
-      <form>
+     
         <div class="form-group">
           <%= f.label :name, "Name" %>
           <%= f.text_field :name, class: "form-control"%>
@@ -28,7 +28,7 @@
         <div class="form-group">
           <%= f.submit "Update User", class: "btn btn-secondary"%>
         </div>
-      </form>
+    
     </div>
   </div>
 </div>
