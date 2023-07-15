@@ -13,26 +13,26 @@
         <tbody>
           <tr>
             <td>
-              <%= link_to user_path(@books.user_id) do %>
-                <%= image_tag @books.user.get_profile_image(100,100) %><br>
-                <%= @books.user.name %>
+              <%= link_to user_path(@book_show.user_id) do %>
+                <%= image_tag @book_show.user.get_profile_image(100,100) %><br>
+                <%= @book_show.user.name %>
               <% end %>
             </tb>
-            <td><%= link_to book_path(@books.id) do %>
-            <%= @books.title %>
+            <td><%= link_to book_path(@book_show.id) do %>
+            <%= @book_show.title %>
             <% end %>
             </td>
             <td>
-              <%= @books.body %>
+              <%= @book_show.body %>
             </td>
             <td>
-              <% if @books.user == current_user %>
-                <%= link_to 'Edit', edit_book_path(@books.id), class: "btn btn-sm btn-success text-white" %>
+              <% if @book_show.user == current_user %>
+                <%= link_to 'Edit', edit_book_path(@book_show.id), class: "btn btn-sm btn-success text-white" %>
               <% end %>
             </td>
             <td>
-              <% if @books.user == current_user %>
-                <%= link_to 'Destroy', book_path(@books.id), method: :delete, "data-confirm" => "本当に消しますか？",
+              <% if @book_show.user == current_user %>
+                <%= link_to 'Destroy', book_path(@book_show.id), method: :delete, "data-confirm" => "本当に消しますか？",
                 class: "btn btn-sm btn-danger text-white" %>
               <% end %>
             </td>
